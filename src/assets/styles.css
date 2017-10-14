@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:Semi-Bold);
 
+body{
+  font-family: 'Raleway' !important;
+}
+
 #menu_main{
   position:fixed;
   top:0px;
@@ -11,9 +15,26 @@
 
 .layout_body {
   background-color: white !important;
-  font-family: 'Raleway' !important;
 }
 
 #layout_content{
   padding-top: 152px;
+}
+
+#footer_main{
+  background-color: #C4C3C2;
+  height: 300px;
+  text-align: center !important;
+  padding-top: 20px;
+}
+
+@media (max-width: 990px) {
+  #layout_content{
+    padding-top: 185px;
+  }
+}
+@media (max-width: 992px) {
+  #layout_content{
+    padding-top: 185px;
+  }
 }

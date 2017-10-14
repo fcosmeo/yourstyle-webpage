@@ -1,59 +1,60 @@
 <div id="menu_main">
-<!--Logo-->
-<div style="height: 100px;width: 100%;text-align: center;padding-top: 20px;background-color: white;">
-  <img src="https://www.yourstyle.com.pe/backend/uploads/register/img_logo_main_1.png" alt=""/>
-</div>
-
-<!--Menú-->
-<nav class="container navbar navbar-toggleable-md navbar-light bg-faded" style="border: medium;">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Inicio</a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">New Arrivals <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blusas</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Denim</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Ropa
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Chompas</a>
-          <a class="dropdown-item" href="#">Abrigo</a>
-          <a class="dropdown-item" href="#">Vestidos</a>
-          <a class="dropdown-item" href="#">Básicos</a>
+  <!--Logo-->
+  <div style="height: 100px;width: 100%;text-align: center;padding-top: 20px;background-color: white;">
+    <img src="https://www.yourstyle.com.pe/backend/uploads/register/img_logo_main_1.png" alt=""/>
+  </div>
+  <div style="height: 52px;">
+    <!--Menú-->
+    <nav class="navbar navbar-default" style="background-color: white;border-color: #9d9d9d;">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Inicio</a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">PROMO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Colecciones</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0 hidden-md-down">
-      <input class="form-control hidden-md-down" type="text" placeholder="Busca aqui: blusas, denim, ropa..." style="width: 300px; !important;" aria-label="Search">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">New Arrivals<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Blusas</a></li>
+            <li><a href="#">Denim</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ropa <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Chompas</a></li>
+                <li><a href="#">Abrigo</a></li>
+                <li><a href="#">Vestidos</a></li>
+                <li><a href="#">Básicos</a></li>
+              </ul>
+            </li>
+            <li><a href="#" style="color: red;">PROMO</a></li>
+            <li><a href="#">Colecciones</a></li>
+          </ul>
+          <form class="navbar-form navbar-right visible-lg visible-md">
+            <input type="text" class="form-control" placeholder="Busca aqui: blusas, denim, ropa..." style="width: 242px;">
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <div style="border: 0px;">
+    <form class="hidden-lg hidden-md" style="background-color: #ce8483">
+      <input type="text" class="form-control" style="background-color: black;color: white;" placeholder="Busca aqui: blusas, denim, ropa...">
     </form>
   </div>
-</nav>
+</div>
+<div id="layout_content">
+  <section id="main">
+    <router-outlet></router-outlet>
+  </section>
+</div>
+<div id="footer_main">
+
 </div>
 
-<div style="background-color: #ce8483; height: 200px;"></div>
-<div style="background-color: #c1e2b3; height: 200px;"></div>
-<div style="background-color: coral; height: 200px;"></div>
-<div style="background-color: moccasin; height: 200px;"></div>
-
-<section id="main" class="col-lg-12">
-  <!-- Componente actual -->
-  <router-outlet></router-outlet>
-</section>
-<!--<img src="http://yourstyle.com.pe/backend/uploads/page/list/webpage_1.jpg">-->
