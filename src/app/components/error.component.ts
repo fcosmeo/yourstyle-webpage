@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'error',
   templateUrl: '../views/error.html'
 })
 
-export class ErrorComponent {
+export class ErrorComponent implements OnInit {
   public titulo: string;
 
   constructor() {
