@@ -14,8 +14,6 @@ body{
   z-index:729;
 }
 
-
-
 .layout_body {
   background-color: white !important;
 }
@@ -31,11 +29,18 @@ body{
   padding-top: 20px;
 }
 
+.form_find_1 {
+  display:none;
+}
 
+.form_find_2 {
+  display:inline;
+  width: 100%;
+}
 
 @media(max-width:767px){
   #layout_content{
-    padding-top: 185px;
+    padding-top: 196px;
   }
 
   .contenedor img.top {
@@ -45,7 +50,7 @@ body{
 
 @media(min-width:768px){
   #layout_content{
-    padding-top: 185px;
+    padding-top: 196px;
   }
   /*Cambio de imagen al pasar el mouse*/
   .contenedor {
@@ -79,7 +84,16 @@ body{
   .contenedor img.top:hover {
     opacity: 0;
   }
+
+  .form_find_1 {
+    display:inline;
+  }
+
+  .form_find_2 {
+    display:none;
+  }
 }
+
 @media(min-width:1200px){
   #layout_content{
     padding-top: 152px;
