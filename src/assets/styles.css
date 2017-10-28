@@ -40,7 +40,7 @@ body{
 
 @media(max-width:767px){
   #layout_content{
-    padding-top: 196px;
+    padding-top: 194px;
   }
 
   .contenedor img.top {
@@ -50,7 +50,7 @@ body{
 
 @media(min-width:768px){
   #layout_content{
-    padding-top: 196px;
+    padding-top: 194px;
   }
   /*Cambio de imagen al pasar el mouse*/
   .contenedor {
