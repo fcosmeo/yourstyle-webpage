@@ -1,0 +1,62 @@
+#menu_main{
+  position:fixed;
+  top:0px;
+  width: 100%;
+  height: 144px;
+  background-color:white;
+  z-index:729;
+}
+
+.form_find_1 {
+  display:none;
+}
+
+.form_find_2 {
+  display:inline;
+  width: 100%;
+}
+
+#layout_content{
+  padding-top: 176px;
+}
+
+#footer_main{
+  background-color: #C4C3C2;
+  height: 300px;
+  text-align: center !important;
+  padding-top: 20px;
+}
+
+.footer_social {
+  color: white;
+  background-color: dimgrey;
+  font-size: 20px;
+  padding: 10px;
+}
+
+a:hover{text-decoration:none;}
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width:767px){
+
+}
+
+@media screen and (min-width:992px){
+  .form_find_1 {
+    display:inline;
+  }
+
+  .form_find_2 {
+    display:none;
+  }
+  #layout_content{
+    padding-top: 144px;
+  }
+}
+
+@media screen and (min-width:1200px){
+
+}
