@@ -1,4 +1,4 @@
-#menu_main{
+#app_menu_main{
   position:fixed;
   top:0px;
   width: 100%;
@@ -6,11 +6,35 @@
   z-index:729;
 }
 
-.form_find_1 {
+#app_menu_main #app_logo{
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+#app_menu_main #app_logo img{
+  vertical-align: middle;
+  background-color: white;
+}
+
+#app_menu_main #app_navbar{
+  height: 42px;
+  background-color: white;
+}
+
+#app_menu_main #app_navbar nav{
+  background-color: white !important;
+  border-color: #C4C3C2 !important;
+  border-style: solid;
+  border-width: 1px;
+  z-index: 9999;
+}
+
+#app_menu_main #app_navbar #app_form_find_1{
   display:none;
 }
 
-.form_find_2 {
+#app_menu_main #app_form_find_2{
   display:inline;
   width: 100%;
 }
@@ -44,13 +68,14 @@ a:hover{text-decoration:none;}
 }
 
 @media screen and (min-width:992px){
-  .form_find_1 {
+  #app_menu_main #app_navbar #app_form_find_1{
     display:inline;
   }
 
-  .form_find_2 {
+  #app_menu_main #app_form_find_2{
     display:none;
   }
+
   #layout_content{
     padding-top: 108px;
   }
