@@ -34,30 +34,59 @@
   display:none;
 }
 
+#app_menu_main #app_navbar #app_form_find_1 input{
+  width: 250px;
+  font-size: small;
+  height: 32px;
+}
+
+#app_menu_main #app_navbar #app_form_find_1 span button{
+  background-color: white;
+  height: 32px;
+  vertical-align: middle;
+}
+
 #app_menu_main #app_form_find_2{
   display:inline;
   width: 100%;
 }
 
-#layout_content{
+#app_menu_main #app_form_find_2 input{
+  background-color: black;
+  color: white;
+  font-size: small;
+  height: 32px;
+  border: 0px;
+}
+
+#app_menu_main #app_form_find_2 span button{
+  background-color: black;
+  height: 32px;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+#app_layout_content{
   padding-top: 140px;
 }
 
-#footer_main{
+#app_footer_main{
   background-color: #C4C3C2;
   height: 300px;
   text-align: center !important;
   padding-top: 20px;
 }
 
-.footer_social {
+#app_footer_main #app_footer_social a span{
   color: white;
   background-color: dimgrey;
   font-size: 20px;
   padding: 10px;
 }
 
-a:hover{text-decoration:none;}
+#app_footer_main #app_footer_social a:hover{
+  text-decoration:none;
+}
 
 @media screen and (min-width: 576px) {
 
@@ -76,7 +105,7 @@ a:hover{text-decoration:none;}
     display:none;
   }
 
-  #layout_content{
+  #app_layout_content{
     padding-top: 108px;
   }
 }
